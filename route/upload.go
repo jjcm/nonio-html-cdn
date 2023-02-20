@@ -63,6 +63,8 @@ func UploadFile(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	os.Chmod(tempFolder, 0644)
+
 	// Loop through the files and write them to the temp folder
 	for i, _ := range files {
 		file, err := files[i].Open()
