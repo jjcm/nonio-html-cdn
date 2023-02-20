@@ -1,0 +1,1 @@
+This is purely a placeholder file so this folder gets created - it's for temp html uploads

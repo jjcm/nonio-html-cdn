@@ -1,0 +1,12 @@
+#### update the values of environment variables
+
+Environment=APP_PORT=4205               # the application port
+
+#### start the application by systemd
+
+$ cp soci-html-cdn.service /etc/systemd/system/    # copy the 'soci-html-cdn.service' to directory '/etc/systemd/system'
+$ systemctl daemon-reload
+$ systemctl enable soci-html-cdn.service
+$ systemctl start soci-html-cdn.service
+$ systemctl status soci-html-cdn.service
+$ systemctl stop soci-html-cdn.service
